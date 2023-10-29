@@ -1,0 +1,67 @@
+/* Zawarte tutaj reguły zadziałają na wszystkie elementy strony WWW*/
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Kasuje marginesy zewnętrzne i wewnętrzne dla dwóch elementów głównych:
+    - html
+    - body
+   Strona ma się wyświetlać od strony lewej do prawej*/
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% auto 10% 20%;
+    grid-template-rows: 10vh 5vh repeat(2, auto) 7vh;
+    
+}
+/*
+    Jednostki CSS: px, %, q, vh, vw, rem, em, ex, pt, pc, fr, mm, cm, in
+    Jednostki względne: %, vh, vw, fr, rem, em, ex, pc
+    Jednostki bezwzględne: q, px, mm, cm, in, pt
+*/
+
+header {
+    grid-row: 1;
+    grid-column: 1 / 3;
+}
+
+#login {
+    grid-row: 1;
+    grid-column: 3 / 5;
+}
+
+#grainbreed {
+    grid-row: 2;
+    grid-column: 1 / 5;
+}
+
+nav {
+    grid-row: 3 / 5;
+    grid-column: 1;
+}
+
+#main {
+    grid-row: 3 / 5;
+    grid-column: 2 / 4;
+}
+
+#helper {
+    grid-row: 3;
+    grid-column: 4;
+}
+
+#adv {
+    grid-row: 4;
+    grid-column: 4;
+}
+
+footer {
+    grid-row: 5;
+    grid-column: 1 / 5;
+}
