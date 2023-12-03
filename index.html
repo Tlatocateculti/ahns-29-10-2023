@@ -8,6 +8,10 @@
         <meta name="author" content="nieznany"/>
         <title>Strona WWW</title>
         <link rel="stylesheet" href="./css/style.css"/>
+        <script src="./js/javascript.js">
+            
+        </script>
+
     </head>
     <body>
         <main>
@@ -23,9 +27,13 @@
                 <p>Jesteś na stronie głównej</p>
             </section>
             <nav>
-                <a href="#">Odnośnik1</a>
-                <a href="#">Odnośnik2</a>            
-            </nav>
+                <div class="przycisk" data-address="main"><p>Strona główna</p></div>
+                <div class="przycisk" data-address="gallery"><p>Galeria</p></div>
+                <div class="przycisk" data-address="about"><p>Kontakt</p></div>
+                <div class="przycisk" data-address="legal"><p>Nota prawna</p></div>
+                <!-- <a href="#">Odnośnik1</a>
+                <a href="#">Odnośnik2</a> -->            
+            </nav>            
             <section id="main">
                 <p>Tutaj cała streść strony WWW</p>
             </section>
@@ -38,6 +46,7 @@
             <footer>
                 <p>Strona na potrzeby wykładu</p>
             </footer>
-        </main>
+        </main>        
     </body>
+    
 </html>

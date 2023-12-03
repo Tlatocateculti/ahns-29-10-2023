@@ -26,6 +26,33 @@ main {
     Jednostki bezwzględne: q, px, mm, cm, in, pt
 */
 
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+
+.przycisk {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+
+    border-radius: 15px 0;
+    /*width: 20%;*/
+}
+
+.przycisk:hover {
+    opacity: 0.7;
+}
+
 header {
     grid-row: 1;
     grid-column: 1 / 3;
